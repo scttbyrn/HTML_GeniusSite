@@ -40,6 +40,8 @@ div.container{
     margin: 20px;
     gap: 15px;
     flex-shrink: 1;
+    
+
 
 }
 
@@ -73,7 +75,7 @@ div.container{
     font-family: sans-serif;
     color: rgb(20, 15, 1);
     white-space: nowrap; /* Keeps "WATCH NOW" from splitting onto two lines */
-
+/*  */
 
 
 }
@@ -130,7 +132,7 @@ div.imageContainer{
 
 
 
-    
+
 }
 
 #2pacImg{
