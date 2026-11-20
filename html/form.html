@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Page</title>
+
+</head>
+
+<body>
+
+    <p style="font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    "><strong>Fill-up Form</strong></p>
+
+    <form action="index.html" method="POST" enctype="multipart/form-data">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" minlength="6" maxlength="15" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="@gmail.com" required><br><br>
+
+        <label for="phone">Phone #:</label>
+        <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" required><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1"><br><br>
+
+        <label for="title">Title:</label>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title" required>
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." name="title" required>
+        <label for="Engr.">Engr.</label>
+        <input type="radio" id="Engr." name="title" required><br><br>
+
+        <label for="payment">Payment:</label>
+        <select name="payment" required>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Master-Card</option>
+            <option value="giftcard">Gift-Card</option>
+        </select><br><br>
+
+        <label for="subscribe">Subscribe:</label>
+        <input type="checkbox" id="subscribe" required><br><br>
+
+        <label for="comment">Comments:</label>
+        <textarea id="comment" rows="3" cols="25" placeholder="Comment Section Area..." required></textarea><br><br>
+
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" accept="image/png, image/jpeg" required><br><br>
+
+        <input type="reset">
+        <input type="submit">
+
+
+
+    </form>
+
+    <hr>
+    <br>
+    <a href="index.html">
+        <button onclick="goodbye()" style="font-size: 15px; 
+            background-color: lightcyan; 
+            border-radius: 15px;
+            color: black;
+            font-family: Times New Roman;
+            font-style: oblique;
+            width: 150px;
+            height: 50px;
+            text-align: center;">Go Back to Home..
+        </button>
+    </a>
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Button Section..</title>
+
+</head>
+
+<body>
+
+    <h3 style="text-decoration: underline;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;">Buttons Section</h3>
+
+    <p id="greeting" style="text-decoration: underline;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;"></p><br>
+
+    <button onclick="doSomething()" style="font-size: 20px; 
+    background-color: burlywood; 
+    border-radius: 25px;
+    color: white;
+    font-family: Times New Roman;
+    font-style: italic;
+    width: 150px;
+    height: 50px;">Click</button>
+    <br><br>
+
+    <button onclick="doSomethingg()" style="font-size: 20px; 
+    background-color: black; 
+    border-radius: 25px;
+    color: white;
+    font-family: Times New Roman;
+    font-style: italic;
+    width: 150px;
+    height: 50px;">Tap</button>
+    <br><br>
+
+    <button onclick="doSomethinggg()" style="font-size: 20px; 
+    background-color: pink; 
+    border-radius: 25px;
+    color: lightcoral;
+    font-family: Times New Roman;
+    font-style: italic;
+    width: 150px;
+    height: 50px;
+    text-align: center;">Press</button>
+    <br><br><br>
+
+    <button id="textbutton" onclick="dynamicText(this)" style="font-size: 20px; 
+    background-color: rgb(60, 2, 85); 
+    border-radius: 25px;
+    color: rgb(238, 185, 50);
+    font-family: Times New Roman;
+    font-style: italic;
+    width: 150px;
+    height: 50px;
+    text-align: center;">Testing</button>
+    <br><br><br>
+
+    <button id="textbutton" onclick="dynamicText(this)" style="font-size: 20px; 
+    background-color: green; 
+    border-radius: 25px;
+    color: whitesmoke;
+    font-family: Times New Roman;
+    font-style: italic;
+    width: 150px;
+    height: 50px;
+    text-align: center;">QA Team</button>
+    <br><br><br>
+
+    <button id="textbutton" onclick="dynamicText(this)" style="font-size: 20px; 
+    background-color: rgb(8, 8, 121); 
+    border-radius: 25px;
+    color: rgb(241, 85, 28);
+    font-family: Times New Roman;
+    font-style: italic;
+    width: 150px;
+    height: 50px;
+    text-align: center;">Development</button>
+    <br><br><br>
+
+    <p id="goodbye" style="text-decoration: underline;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;"></p><br>
+
+    <hr>
+    <br>
+    <a href="index.html">
+        <button onclick="goodbye()" style="font-size: 15px; 
+            background-color: lightcyan; 
+            border-radius: 15px;
+            color: black;
+            font-family: Times New Roman;
+            font-style: oblique;
+            width: 150px;
+            height: 50px;
+            text-align: center;">Go Back to Home..
+        </button>
+    </a>
+
+
+
+    <script>
+        function doSomething() {
+            document.getElementById("greeting").innerHTML = "Great!";
+        }
+
+        function doSomethingg() {
+            document.getElementById("greeting").innerHTML = "Look's Good!";
+        }
+
+        function doSomethinggg() {
+            document.getElementById("greeting").innerHTML = "Perfect!";
+        }
+
+        function goodbye() {
+            document.getElementById("goodbye").innerHTML = "Goodbye!";
+        }
+
+        function dynamicText(clickedButton) {
+            let buttonText = clickedButton.textContent.trim();
+
+            if (buttonText === "Testing") {
+                document.getElementById("greeting").innerHTML = "Testing!";
+
+            } else if (buttonText === "QA Team") {
+                document.getElementById("greeting").innerHTML = "QA!";
+
+            } else if (buttonText === "Development") {
+                document.getElementById("greeting").innerHTML = "Development!";
+
+            };
+        }
+
+    </script>
+
+
+
+
+</body>
+
+
+</html>

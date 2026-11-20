@@ -1,0 +1,170 @@
+body{
+
+
+margin: 0;
+padding: 0;
+flex-wrap: wrap;
+
+
+}
+
+div.mainHeader{
+
+    width: auto;
+    min-height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.containerMain{
+
+    width: auto;
+    min-height:300px;
+    background-color: hsla(17, 89%, 47%, 0.74);
+    flex-wrap: nowrap;
+
+
+}
+
+div.container{
+
+    min-width: 60%;
+    height: 75px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    gap: 15px;
+    flex-shrink: 1;
+
+}
+
+#genius{
+    color: hsl(66, 94%, 51%);
+    font-size: clamp(18px, 2.5vw, 25px); /* Scales smoothly between 18px and 25px */
+    font-family: sans-serif;
+    font-weight: 900;
+    letter-spacing: clamp(2px, 0.5vw, 5px);
+    text-shadow: -3px 2px 0px black;
+    
+
+}
+
+#verified{
+    font-size: clamp(26px, 5vw, 60px);   /* Scales smoothly between 26px and 60px */
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(20, 15, 1);
+    
+
+
+}
+
+
+#watchNow{
+    flex-shrink: 0;
+    border: 1px solid black;
+    padding: clamp(4px, 1vw, 6px) clamp(8px, 1.5vw, 12px);
+    font-size: clamp(11px, 1.5vw, 15px); /* Scales smoothly between 11px and 15px */
+    font-family: sans-serif;
+    color: rgb(20, 15, 1);
+    white-space: nowrap; /* Keeps "WATCH NOW" from splitting onto two lines */
+
+
+
+}
+
+div.navArea{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    min-height: 40px;
+    margin-left: 10px ;
+    margin-right: 10px ;
+    color: whitesmoke;
+
+}
+
+div#moveToRight{
+
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 20px;
+    min-height: 30px;
+    margin-left: auto;
+
+    
+}
+
+img.floatImage{
+
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    
+    /* Pulls the image downward past the banner edge */
+    margin-bottom: -40px; 
+    position: relative;
+    z-index: 2; /* Ensures the image stays above the white section below */
+
+}
+
+div.imageContainer{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-left: 200px;
+    
+
+
+
+
+}
+
+#2pacImg{
+
+        align-self: flex-end;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Layout Adjustment: Stacks items cleanly on very small phone screens */
+@media screen and (max-width: 520px) {
+    * {
+        
+        flex-wrap: wrap;
+
+    }
+}
+
+
+
