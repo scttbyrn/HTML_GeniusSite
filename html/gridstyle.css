@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+}
+
+.charts-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 1. Define the Grid Container */
+.song-grid {
+  display: grid;
+  /* Creates 3 equal-width columns */
+  grid-template-columns: repeat(3, 1fr); 
+  /* Adds 20px space between rows and columns */
+  gap: 20px; 
+}
+
+/* 2. Make the #1 Featured Card Span 2 Columns */
+.song-card.featured {
+  grid-column: span 2;
+  background-color: #121212;
+  color: white;
+}
+
+/* Card Styling */
+.song-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.rank {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.song-card h3,
+.song-card p {
+  margin: 0;
+}
